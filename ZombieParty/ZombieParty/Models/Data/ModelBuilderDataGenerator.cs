@@ -31,8 +31,7 @@ namespace ZombieParty.Data
        new Zombie { Id = 14, Point = 5, Force = 5, ShortDesc = "Le clown malheureux qui court après les enfants", Name = "The Clown", ZombieTypeId = 3 },
        new Zombie { Id = 15, Point = 4, Force = 10, ShortDesc = "Le comptable mécontent qui cherche les failles", Name = "Clicker", ZombieTypeId = 2 },
        new Zombie { Id = 16, Point = 10, Force = 12, ShortDesc = "L'étudiant happé par Teams. Trop d'heures de vidéos ont transformé cet étudiant en zombie", Name = "TeamsZombie", ZombieTypeId = 3 },
-       new Zombie { Id = 17, Point = 4, Force = 20, ShortDesc = "La fêtarde du samedi soir qui cherche les fêtes et les bars en vogue", Name = "Mathilde", ZombieTypeId = 3 }
-   );
+       new Zombie { Id = 17, Point = 4, Force = 20, ShortDesc = "La fêtarde du samedi soir qui cherche les fêtes et les bars en vogue", Name = "Mathilde", ZombieTypeId = 3 });
 
             #endregion
 

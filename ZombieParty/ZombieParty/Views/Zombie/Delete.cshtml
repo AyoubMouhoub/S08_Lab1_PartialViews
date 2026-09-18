@@ -54,6 +54,16 @@
                         <a class="btn btn-secondary" asp-action="Index">Back to List</a>
                     </div>
                 </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="@Model.Force" class="col-form-label"></label>
+                    </div>
+                    <div class="col-8">
+                        @Model.ZombieType.TypeName
+                    </div>
+                </div>
+
+
             </form>
         </div>
     </div>
