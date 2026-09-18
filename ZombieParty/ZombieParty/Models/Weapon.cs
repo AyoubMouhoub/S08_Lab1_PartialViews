@@ -8,32 +8,32 @@ namespace ZombieParty.Models
 
         [Display(Name = "Weapon's Name")]
         [StringLength(250, MinimumLength = 2)]
-        public string Name { get; set; }
+        public virtual string Name { get; set; }
 
         [Display(Name = "Weapon's Description")]
         [MaxLength(2500)]
         [DataType(DataType.MultilineText)]
-        public string? Description { get; set; }
+        public virtual string? Description { get; set; }
 
         [Range(0, Double.MaxValue)]
-        public decimal Force { get; set; }
+        public virtual decimal Force { get; set; }
 
         [Range(0, 100000, ErrorMessage = "The {0} must be between {1} and {2}")]
         [DataType(DataType.Currency)]
-        public decimal Price { get; set; }
+        public virtual decimal Price { get; set; }
 
         [DataType(DataType.DateTime)]
         [Display(Name = "Created Date")]
-        public DateTime CreatedDate { get; set; } = DateTime.Now;
+        public virtual DateTime CreatedDate { get; set; } = DateTime.Now;
 
         [Display(Name = "Weapon's Image")]
         [DataType(DataType.ImageUrl)]
-        public string? Image { get; set; }
+        public virtual string? Image { get; set; }
 
-        public int Qty { get; set; }
+        public virtual int Qty { get; set; }
 
         [Display(Name = "Qty Bought")]
-        public int QtyBought { get; set; }
+        public virtual int QtyBought { get; set; }
 
         public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
         {
